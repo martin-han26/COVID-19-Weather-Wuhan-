@@ -68,7 +68,7 @@ for (i in 1:3) {
   
 }
 
-# plots & results
+# results
 mod7 = gam(reff~s(ave.temp, k=3), family = Gamma(link = log),data = lag7[1:58,])
 par(mfrow = c(2,2))
 gam.check(mod7)
